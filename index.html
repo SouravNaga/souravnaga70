@@ -32,7 +32,9 @@
 	<!--/AOS ANIMATION CSS -->
 </head>
 <body>
-
+	<audio id="song">
+		<source src="music1.mp3">
+	  </audio>
 	<!-- ======================================== THEME CHANGER======================================== -->
 	<div class="theme_btn dropdown-toggle" id="menu1" data-toggle="dropdown"  data-aos="zoom-in"><span class="material-icons-outlined">settings</span></div>
 	<div class="theme_box dropdown-menu" role="menu">
@@ -767,6 +769,12 @@
 	<!-- AOS ANIMATION -->
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
+		window.addEventListener('click',() =>{
+        let vari =  document.getElementById("song");
+        vari.play();
+        vari.loop = true;
+        vari.volume = 0.3;
+      });
 	AOS.init({
 		offset: 150,
 		duration: 700,
