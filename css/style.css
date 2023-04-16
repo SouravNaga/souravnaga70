@@ -78,6 +78,11 @@ body.Dark_Mode .theme_box{
 	margin-bottom: 8px;
 	text-align: center;
 }
+.website-counter{
+	font-size: var(--normal_text);
+	color: blue;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 .Portion_Heading span{
 	font-size: var(--normal_text);
 	color: var(--light_silver);
